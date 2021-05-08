@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main()
+{
+   int N;
+  // printf("You entere value",&N);
+  scanf("%d",&N);
+  if(N%5==0 && N%11!=0)
+    {
+      printf("ONE");
+    }
+  else{
+    if(N%5==0 && N%11==0)
+  {
+    printf("Both");
+  }
+  else(N%5!=0 && N%11!=0);
+  {
+    printf("NONE");
+  }
+  } 
+  return 0;
+}
+  
