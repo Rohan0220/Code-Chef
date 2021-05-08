@@ -5,20 +5,17 @@ int main()
    int N;
   // printf("You entere value",&N);
   scanf("%d",&N);
-  if(N%5==0 && N%11!=0)
+  if((N%5==0 && N%11!=0) || (N%5!=0 && N%11==0))
     {
       printf("ONE");
     }
-  else{
-    if(N%5==0 && N%11==0)
+  else if (N%5==0 && N%11==0)
+    {
+    printf("BOTH");
+    }
+ else
   {
-    printf("Both");
+     printf("NONE");
   }
-  else(N%5!=0 && N%11!=0);
-  {
-    printf("NONE");
-  }
-  } 
   return 0;
 }
-  
