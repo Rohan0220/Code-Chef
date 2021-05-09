@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() 
+{
+   int N;       //No of elements
+   int c= 0; //COunter
+   
+   scanf("%d",&N);
+
+   int a[(int)N/2];  //arrray 
+
+     for (int i = 1; i<=N; i++)
+    {
+      if(N % i ==0)
+      {
+        a[c] = i;
+        c++;
+      }
+    }
+    printf("%d\n",c);
+    for(int i=0;i<c;i++)
+    {
+        printf("%d ",a[i]);
+    }
+  return 0;
+}
+  
+ 
