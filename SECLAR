@@ -1,0 +1,29 @@
+Q. https://www.codechef.com/CCSTART2/problems/SECLAR
+
+
+#include <stdio.h>
+
+int main()
+{
+    int A, B, C;
+    scanf("%d", &A);
+    scanf("%d", &B);
+    scanf("%d", &C);
+
+    if ((A > B) && (A > C))  //A max
+    {
+        if (B > C) printf("%d", B);
+        else    printf("%d", C);
+    }
+    else if (B > C )
+    {
+        if(A>C) printf("%d" , A);
+        else printf("%d" , C);
+    }
+    else
+    {
+        if( A > B ) printf("%d" , A);
+        else printf("%d" , B);
+    }
+    return 0;
+}
